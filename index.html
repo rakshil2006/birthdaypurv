@@ -88,9 +88,21 @@
         </div>
     </div>
 
-    <audio autoplay loop>
-        <source src="Happy Birthday Guitar Instrumental.mp3" type="audio/mpeg">
-        Your browser does not support the audio element.
-    </audio>
+   <audio id="birthday-audio" loop>
+    <source src="Happy Birthday Guitar Instrumental.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+</audio>
+
+<div id="audio-control">
+    <button onclick="playAudio()">Play Birthday Song 🎵</button>
+</div>
+
+<script>
+    function playAudio() {
+        const audio = document.getElementById('birthday-audio');
+        audio.play();
+    }
+</script>
+
 </body>
 </html>
